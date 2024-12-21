@@ -1,0 +1,158 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    text-align=center;
+}
+
+/* Header styles */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Navigation styles */
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #35424a;
+}
+
+/* Button styles */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5cb85c; /* Bootstrap success color */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+form {
+    max-width: 600px; /* Set a maximum width for the form */
+    margin: 20px auto; /* Center the form on the page */
+    padding: 20px;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+button:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Stack navigation items on smaller screens */
+        margin-bottom: 10px; 
+    }
+
+    header h1 {
+        font-size: 2em; /* Smaller header on mobile */
+    }
+}
+input {
+    width: 20%;
+  }
+/* General input field styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%; /* Full width of the container */
+    padding: 12px 20px; /* Padding inside the input box */
+    margin: 8px 0; /* Margin between input fields */
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-size: 16px; /* Font size for text inside the input */
+}
+
+/* Focus effect on input fields */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #5cb85c; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Placeholder styling */
+input::placeholder,
+textarea::placeholder {
+    color: #aaa; /* Light gray color for placeholder text */
+    opacity: 1; /* Ensure full opacity for placeholder */
+}
+
+/* Error message styles */
+error-message {
+    color: #d9534f; /* Red color for error messages */
+    font-size: 14px; /* Font size for error messages */
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+        padding: 10px; /* Adjust padding on smaller screens */
+        font-size: 14px; /* Smaller font size on mobile devices */
+    }
+}
